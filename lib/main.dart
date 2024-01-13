@@ -5,7 +5,7 @@ import 'package:git/Screens/homePage.dart';
 import 'package:git/appTheme/AppTheme.dart';
 
 void main() {
-  runApp(BlocProvider(create: (context) => ThemeBloc(), child: const MyApp()));
+  runApp(BlocProvider(create: (context) => ThemeBloc(), child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
             theme: lightTheme,
             themeMode: state,
             darkTheme: darkTheme,
-            home: const HomePage());
+            home: HomePage());
       },
     );
   }

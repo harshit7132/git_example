@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
           Switch(
             value: context.read<ThemeBloc>().state == ThemeMode.dark,
             onChanged: (value) {
-              context.read<ThemeBloc>().add(ThemeChanged(isDark: value));
+              context.read<ThemeBloc>().add(ThemeChanged(value));
             },
           )
         ],

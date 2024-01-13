@@ -1,6 +1,6 @@
 abstract class ThemeEvent {}
 
 class ThemeChanged extends ThemeEvent {
-  bool isDark;
-  ThemeChanged({required this.isDark});
+  final bool isDark;
+  ThemeChanged(this.isDark);
 }
